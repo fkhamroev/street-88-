@@ -1,0 +1,125 @@
+@media (max-width:1200px) {
+    .container{
+            max-width: 1140px;
+    }
+}
+@media (max-width:992px) {
+    .container{
+            max-width: 960px;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:768px) {
+    .container{
+            max-width: 720px;
+    }
+    .header__title{
+        font-size: 55px;
+    }
+    .header__title_small{
+        font-size: 30px;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav__burger{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        right: 20px;
+        background: hsla(0, 0%, 0%, 0.4);
+        top: 140px;
+        flex-direction: column;
+        min-width: 115px;
+        visibility: hidden;
+    }
+    .menu__link{
+        padding: 20px;
+        display: block;
+        margin: 0;
+    }
+    .nav__burger:focus{
+        background:rgba(105, 207, 23, 0.75); 
+    }
+    .nav__burger:focus ~ .menu{
+        visibility: visible;
+    }
+}
+@media (max-width:576px) {
+    .container{
+        max-width: 540px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .menu__link{
+        font-size: 16px;
+    }
+    .header__title{
+        font-size: 50px;
+        text-align: center;
+    }
+    .header__title_small{
+        font-size: 30px;
+        text-align: center;
+    }
+    .header__desc{
+        text-align: center;
+    }
+    .button{
+        flex-direction: column;
+        align-items: center;
+    }
+    .button__price{
+        width: 200px;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main__menu{
+        flex-wrap: wrap;
+    }
+    .client{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .nav__burger{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        right: 20px;
+        background: hsla(0, 0%, 0%, 0.4);
+        top: 140px;
+        flex-direction: column;
+        min-width: 115px;
+        visibility: hidden;
+    }
+    .menu__link{
+        padding: 20px;
+        display: block;
+        margin: 0;
+    }
+    .nav__burger:focus{
+        background:rgba(105, 207, 23, 0.75); 
+    }
+    .nav__burger:focus ~ .menu{
+        visibility: visible;
+    }
+    .footer__menu{
+        padding: 15px;
+        flex-direction: column;
+    }
+    .footer__desc{
+        text-align: center;
+    }
+    .about{
+        text-align: center;
+    }
+    .ads__desc{
+        font-size: 40px;
+    }
+}
